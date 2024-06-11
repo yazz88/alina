@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body 
+{
+	
+	background-image: url(images/background1.gif); /* Путь к фоновому изображению */
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: 50% 102%;
+	background-size: 14% 25%;
+	background-color: #000000; /* Цвет фона */
+	
+}
+   
+ button {
+	padding: 30px 50px;
+	outline: none;
+	border: none;
+	border-radius: 15px;
+	background-color: rgb(255, 20, 147);
+	cursor: pointer;
+	color: #fff;
+	border: 5px solid #4B0082;
+	font-weight: 600;
+	font-size: 20px;
+	letter-spacing: 3px;
+	box-shadow: 0px 10px 10px #4B0082;
+		}
+		
+@keyframes myAnimation {
+      0% { opacity: 0; }
+      50% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+    
+    .element {
+      animation: myAnimation 1.5s infinite;
+    }
+	
+@keyframes txtAnimation {
+      0% {opacity: 0;}
+	  1% {opacity: 0.1;}
+	  33% {opacity: 0.3;}
+	  66% {opacity: 0.6;}
+      100% {opacity: 1;}
+    }
+    
+    .elem {
+      animation: txtAnimation 1.6s;
+    }
+	
+	img {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+		
+	txt {
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+p {
+font-size: 250%
+}
+
+</style>
+
+
+<title>Page Title</title>
+</head>
+<body style="font-family:Comic Sans MS;">
+
+<div style="position:fixed; top: 100px;  left: 695px">
+
+<img id="img_1" style="opacity: 0;" src="images/img_1.jpg" /*Изображения*/ > 
+<img id="img_2" style="opacity: 0;" src="images/img_2.jpg">
+<img id="img_3" style="opacity: 0;" src="images/img_3.jpg">
+<img id="img_4" style="opacity: 0;" src="images/img_4.jpg">
+<img id="img_5" style="opacity: 0;" src="images/img_5.jpg">
+<img id="img_6" style="opacity: 0;" src="images/img_6.jpg">
+<img id="img_7" style="opacity: 0;" src="images/img_7.jpg">
+<img id="img_8" style="opacity: 0;" src="images/img_8.jpg">
+<img id="img_9" style="opacity: 0;" src="images/img_9.jpg">
+<img id="img_10" style="opacity: 0;" src="images/img_10.jpg">
+<img id="img_11" style="opacity: 0;" src="images/img_11.jpg">
+<img id="img_12" style="opacity: 0;" src="images/img_12.jpg">
+<img id="img_13" style="opacity: 0;" src="images/img_13.jpg">
+<img id="img_14" style="opacity: 0;" src="images/img_14.jpg">
+<img id="img_15" style="opacity: 0;" src="images/img_15.jpg">
+<img id="img_16" style="opacity: 0;" src="images/img_16.jpg">
+<img id="test_1" style="opacity: 0;" src="images/test_1.png">
+<img id="test_2" style="opacity: 0;" src="images/test_2.jpg" /*Конец изображений*/ >
+
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 610px" //текст>
+<p id="txt_1" style="display:none; color:rgb(138, 43, 226)" align="center"> Щас бы кошом быть а не вот эти егэ </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 835px" //текст>
+<p id="txt_2" style="display:none; color:rgb(138, 43, 226) " align="center"> Мяу Мяу Мяу </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 710px" //текст>
+<p id="txt_3" style="display:none; color:rgb(138, 43, 226)" align="center"> Ни бек ни мек ни кукареку </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 706px" //текст>
+<p id="txt_4" style="display:none; color:rgb(138, 43, 226)" align="center"> Как мартышке до Эвереста </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 800px" //текст>
+<p id="txt_5" style="display:none; color:rgb(138, 43, 226)" align="center"> И мне не стыдно </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 920px" //текст>
+<p id="txt_6" style="display:none; color:rgb(138, 43, 226)" align="center"> Окс </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 685px" //текст>
+<p id="txt_7" style="display:none; color:rgb(138, 43, 226)" align="center"> Пиздарики какие мы милые </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 833px" //текст>
+<p id="txt_8" style="display:none; color:rgb(138, 43, 226)" align="center"> Сукины дети </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 852px" //текст>
+<p id="txt_9" style="display:none; color:rgb(138, 43, 226)" align="center"> Кощунство </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 870px" //текст>
+<p id="txt_10" style="display:none; color:rgb(138, 43, 226)" align="center"> Откат рп </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 863px" //текст>
+<p id="txt_11" style="display:none; color:rgb(138, 43, 226)" align="center"> Легчайше </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 787px" //текст>
+<p id="txt_12" style="display:none; color:rgb(138, 43, 226)" align="center"> Етижи пассатижи </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 820px" //текст>
+<p id="txt_13" style="display:none; color:rgb(138, 43, 226)" align="center"> Я тебя люблю </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 852px" //текст>
+<p id="txt_14" style="display:none; color:rgb(138, 43, 226)" align="center"> Барабулька </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 821px" //текст>
+<p id="txt_15" style="display:none; color:rgb(138, 43, 226)" align="center"> Моя вафелька </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 725px" //текст>
+<p id="txt_16" style="display:none; color:rgb(138, 43, 226)" align="center"> Ты делаешь меня лучше </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 705px" //текст>
+<p id="txt_17" style="display:none; color:rgb(138, 43, 226)" align="center"> Я постоянно думаю о тебе </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 745px" //текст>
+<p id="txt_18" style="display:none; color:rgb(138, 43, 226)" align="center"> Я боюсь тебя потерять </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 826px" //текст>
+<p id="txt_19" style="display:none; color:rgb(138, 43, 226)" align="center"> Я верю в тебя </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 837px" //текст>
+<p id="txt_20" style="display:none; color:rgb(138, 43, 226)" align="center"> Ты умничка </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 748px" //текст>
+<p id="txt_21" style="display:none; color:rgb(138, 43, 226)" align="center"> У тебя красивые глаза </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 794px" //текст>
+<p id="txt_22" style="display:none; color:rgb(138, 43, 226)" align="center"> Плов из узбеков </p>
+</div>
+<div class="elem" style="position:absolute; top: 610px;  left: 770px" //текст>
+<p id="txt_23" style="display:none; color:rgb(138, 43, 226)" align="center"> Я не пила, я лобзик </p>
+</div>
+
+  <div style="position:fixed; top:0%;  left:34%">
+<div class="element">
+<h1 style="color:rgb(138, 43, 226);"> Нажмите кнопку для отображения...</h1>
+</div>
+</div>
+
+
+
+ <div style="position:fixed; top: 800px;  left: 855px">
+	<button type="button" onclick="Click()">НАЖМИ!</button>
+	
+	<script>
+	var num = 0;
+	function Click(){
+	num++;
+	var getnum = num;
+function random(){
+	var x = Math.floor((Math.random() * 23) + 1);
+	
+	if(x == 1){
+	var text = document.getElementById("txt_1");
+	}
+	else if(x == 2){
+	var text = document.getElementById("txt_2");
+	}
+	else if(x == 3){
+	var text = document.getElementById("txt_3");
+	}
+	else if(x == 4){
+	var text = document.getElementById("txt_4");
+	}
+	else if(x == 5){
+	var text = document.getElementById("txt_5");
+	}
+	else if(x == 6){
+	var text = document.getElementById("txt_6");
+	}
+	else if(x == 7){
+	var text = document.getElementById("txt_7");
+	}
+	else if(x == 8){
+	var text = document.getElementById("txt_8");
+	}
+	else if(x == 9){
+	var text = document.getElementById("txt_9");
+	}
+	else if(x == 10){
+	var text = document.getElementById("txt_10");
+	}
+	else if(x == 11){
+	var text = document.getElementById("txt_11");
+	}
+	else if(x == 12){
+	var text = document.getElementById("txt_12");
+	}
+	else if(x == 13){
+	var text = document.getElementById("txt_13");
+	}
+	else if(x == 14){
+	var text = document.getElementById("txt_14");
+	}
+	else if(x == 15){
+	var text = document.getElementById("txt_15");
+	}
+	else if(x == 16){
+	var text = document.getElementById("txt_16");
+	}
+	else if(x == 17){
+	var text = document.getElementById("txt_17");
+	}
+	else if(x == 18){
+	var text = document.getElementById("txt_18");
+	}
+	else if(x == 19){
+	var text = document.getElementById("txt_19");
+	}
+	else if(x == 20){
+	var text = document.getElementById("txt_20");
+	}
+	else if(x == 21){
+	var text = document.getElementById("txt_21");
+	}
+	else if(x == 22){
+	var text = document.getElementById("txt_22");
+	}
+	else if(x == 23){
+	var text = document.getElementById("txt_23");
+	}
+	return text;
+	}
+	let rand = random();
+	
+	function needtxt(){
+	
+	if (document.getElementById("txt_1").style.display == 'block'){
+	document.getElementById("txt_1").style.display = 'none';
+	}
+	if (document.getElementById("txt_2").style.display == 'block'){
+	document.getElementById("txt_2").style.display = 'none';
+	}
+	if (document.getElementById("txt_3").style.display == 'block'){
+	document.getElementById("txt_3").style.display = 'none';
+	}
+	if (document.getElementById("txt_4").style.display == 'block'){
+	document.getElementById("txt_4").style.display = 'none';
+	}
+	if (document.getElementById("txt_5").style.display == 'block'){
+	document.getElementById("txt_5").style.display = 'none';
+	}
+	if (document.getElementById("txt_6").style.display == 'block'){
+	document.getElementById("txt_6").style.display = 'none';
+	}
+	if (document.getElementById("txt_7").style.display == 'block'){
+	document.getElementById("txt_7").style.display = 'none';
+	}
+	if (document.getElementById("txt_8").style.display == 'block'){
+	document.getElementById("txt_8").style.display = 'none';
+	}
+	if (document.getElementById("txt_9").style.display == 'block'){
+	document.getElementById("txt_9").style.display = 'none';
+	}
+	if (document.getElementById("txt_10").style.display == 'block'){
+	document.getElementById("txt_10").style.display = 'none';
+	}
+	if (document.getElementById("txt_11").style.display == 'block'){
+	document.getElementById("txt_11").style.display = 'none';
+	}
+	if (document.getElementById("txt_12").style.display == 'block'){
+	document.getElementById("txt_12").style.display = 'none';
+	}
+	if (document.getElementById("txt_13").style.display == 'block'){
+	document.getElementById("txt_13").style.display = 'none';
+	}
+	if (document.getElementById("txt_14").style.display == 'block'){
+	document.getElementById("txt_14").style.display = 'none';
+	}
+	if (document.getElementById("txt_15").style.display == 'block'){
+	document.getElementById("txt_15").style.display = 'none';
+	}
+	if (document.getElementById("txt_16").style.display == 'block'){
+	document.getElementById("txt_16").style.display = 'none';
+	}
+	if (document.getElementById("txt_17").style.display == 'block'){
+	document.getElementById("txt_17").style.display = 'none';
+	}
+	if (document.getElementById("txt_18").style.display == 'block'){
+	document.getElementById("txt_18").style.display = 'none';
+	}
+	if (document.getElementById("txt_19").style.display == 'block'){
+	document.getElementById("txt_19").style.display = 'none';
+	}
+	if (document.getElementById("txt_20").style.display == 'block'){
+	document.getElementById("txt_20").style.display = 'none';
+	}
+	if (document.getElementById("txt_21").style.display == 'block'){
+	document.getElementById("txt_21").style.display = 'none';
+	}
+	if (document.getElementById("txt_22").style.display == 'block'){
+	document.getElementById("txt_22").style.display = 'none';
+	}
+	if (document.getElementById("txt_23").style.display == 'block'){
+	document.getElementById("txt_23").style.display = 'none';
+	}
+	
+	}
+	
+	
+						if (getnum == 1){
+		var img = document.getElementById("img_1");
+		var txt = rand;
+            if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										}
+										
+			if (txt.style.display == 'none') {
+                txt.style.display = 'block';
+										}
+						}
+						
+						if (getnum == 2){
+		var img = document.getElementById("img_1");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_1').style.display="none";
+		
+						}
+						
+		setTimeout(delay1, 0500);
+		
+		function delay2(){
+		var img = document.getElementById("img_2");
+		var txt = rand;
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										}
+			if (txt.style.display == 'none') {
+                txt.style.display = 'block';
+										}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 3){
+		var img = document.getElementById("img_2");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_2').style.display="none";
+		
+						}
+		setTimeout(delay1, 0500);
+		
+		function delay2(){
+		var img = document.getElementById("img_3");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										}
+										
+			if (txt.style.display == 'none') {
+                txt.style.display = 'block';
+										}
+										
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 4){
+		var img = document.getElementById("img_3");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_3').style.display="none";
+		
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_4");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										}
+										
+			if (txt.style.display == 'none') {
+                txt.style.display = 'block';
+										}
+										
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 5){
+		var img = document.getElementById("img_4");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_4').style.display="none";
+		
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_5");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										} 
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}
+			
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 6){
+		var img = document.getElementById("img_5");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_5').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_6");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										}
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 7){
+		var img = document.getElementById("img_6");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_6').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_7");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										} 
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 8){
+		var img = document.getElementById("img_7");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_7').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_8");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										} 
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 9){
+		var img = document.getElementById("img_8");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_8').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_9");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										} 
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 10){
+		var img = document.getElementById("img_9");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_9').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_10");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										} 
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 11){
+		var img = document.getElementById("img_10");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_10').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_11");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										} 
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 12){
+		var img = document.getElementById("img_11");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_11').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_12");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										} 
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 13){
+		var img = document.getElementById("img_12");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_12').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_13");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										}
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}						
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 14){
+		var img = document.getElementById("img_13");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_13').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_14");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										}
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}						
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 15){
+		var img = document.getElementById("img_14");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_14').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_15");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										}
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 16){
+		var img = document.getElementById("img_15");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_15').style.display="none";
+						}
+		setTimeout(delay1, 0500);
+		function delay2(){
+		var img = document.getElementById("img_16");
+		var txt = rand;
+		
+			if (img.style.opacity == 0) {
+                img.style.opacity = 1;
+										}
+			if (txt.style.display == 'none'){
+				txt.style.display = 'block';
+											}							
+						}
+		setTimeout(delay2, 0500);
+						}
+						
+						if (getnum == 17){
+		var img = document.getElementById("img_16");
+		var txt = needtxt();
+		
+		img.style.opacity = 0;
+		
+		function delay1(){
+		document.getElementById('img_16').style.display="none";
+						}
+						
+		setTimeout(delay1, 0500);
+		
+		function delay2(){
+		location.reload(true);
+						}
+						
+		setTimeout(delay2, 0500);
+		
+						}
+					}
+	</script>
+	
+</div>
+</body>
+</html>
